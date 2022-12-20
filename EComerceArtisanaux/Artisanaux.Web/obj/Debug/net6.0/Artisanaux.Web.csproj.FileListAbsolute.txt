@@ -24,3 +24,8 @@ C:\Users\AnasseDEMNATI\Documents\ACE\EComerceArtisanaux\Artisanaux.Web\obj\Debug
 C:\Users\AnasseDEMNATI\Documents\ACE\EComerceArtisanaux\Artisanaux.Web\obj\Debug\net6.0\Artisanaux.Web.pdb
 C:\Users\AnasseDEMNATI\Documents\ACE\EComerceArtisanaux\Artisanaux.Web\obj\Debug\net6.0\Artisanaux.Web.genruntimeconfig.cache
 C:\Users\AnasseDEMNATI\Documents\ACE\EComerceArtisanaux\Artisanaux.Web\obj\Debug\net6.0\ref\Artisanaux.Web.dll
+C:\Users\AnasseDEMNATI\Documents\ACE\EComerceArtisanaux\Artisanaux.Web\obj\Debug\net6.0\staticwebassets\msbuild.Artisanaux.Web.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\AnasseDEMNATI\Documents\ACE\EComerceArtisanaux\Artisanaux.Web\obj\Debug\net6.0\staticwebassets\msbuild.build.Artisanaux.Web.props
+C:\Users\AnasseDEMNATI\Documents\ACE\EComerceArtisanaux\Artisanaux.Web\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Artisanaux.Web.props
+C:\Users\AnasseDEMNATI\Documents\ACE\EComerceArtisanaux\Artisanaux.Web\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Artisanaux.Web.props
+C:\Users\AnasseDEMNATI\Documents\ACE\EComerceArtisanaux\Artisanaux.Web\obj\Debug\net6.0\staticwebassets.pack.json

@@ -46,6 +46,32 @@ namespace Artisanaux.Service.ProductAPI.Migrations
                     b.HasKey("ProductId");
 
                     b.ToTable("products");
+
+                    b.HasData(
+                        new
+                        {
+                            ProductId = 1,
+                            CategoryName = "Category 1",
+                            ImageURL = "http://lorempixel.com/640/480/technics/1",
+                            Price = 1232.0,
+                            ProductName = "Product 1"
+                        },
+                        new
+                        {
+                            ProductId = 2,
+                            CategoryName = "Category 2",
+                            ImageURL = "http://lorempixel.com/640/480/technics/2",
+                            Price = 1232.0,
+                            ProductName = "Product 2"
+                        },
+                        new
+                        {
+                            ProductId = 3,
+                            CategoryName = "Category 3",
+                            ImageURL = "http://lorempixel.com/640/480/technics/3",
+                            Price = 1232.0,
+                            ProductName = "Product 3"
+                        });
                 });
 #pragma warning restore 612, 618
         }

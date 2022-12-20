@@ -17,14 +17,28 @@ namespace Artisanaux.Service.ProductAPI.Repository
             _mapper = mapper;
         }
 
-        public Task<ProductDto> CreateUpdateProduct(ProductDto productDto)
+        public Task<ProductDto> CreateUpdateProduct(ProductDto product)
         {
-            throw new NotImplementedException();
+           if(product==null)
+                throw new ArgumentNullException(nameof(product));
+            Product productEntity = _mapper.Map<Product>(product);
+            if (productEntity.ProductId > 0)
+            {
+                _db.Products!.Update(productEntity);
+            }
+            else
+            {
+                _db.Products!.Add(productEntity);
+            }
+
+            _db.SaveChanges();
+            return Task.FromResult(_mapper.Map<ProductDto>(productEntity));
         }
 
         public Task<bool> DeleteProduct(int productId)
         {
-            throw new NotImplementedException();
+            _db.Products!.Remove(new Product { ProductId = productId });
+            return Task.FromResult(_db.SaveChanges() > 0);
         }
 
         public async Task<ProductDto> GetProductById(int productId)
