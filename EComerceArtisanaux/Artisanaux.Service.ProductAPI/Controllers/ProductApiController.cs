@@ -46,6 +46,12 @@ public class ProductApiController : ControllerBase
         _response.Result = isDeleted;
         return Ok(_response);
     }
-
+    [HttpPut]
+    public async Task<object> Put(ProductDto productDto)
+    {
+        ProductDto product = await _productRepository!.CreateUpdateProduct(productDto);
+        _response.Result = product;
+        return Ok(_response);
+    }
 }
 

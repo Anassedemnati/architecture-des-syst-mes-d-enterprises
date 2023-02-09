@@ -11,14 +11,24 @@ public class ProdactService : BaseServise,IProdactService
         _clientFactory = clientFactory;
     }
 
-    public Task<T> CreateProductAsync<T>(ProductDto product, string token)
+    public Task<T> CreateProductAsync<T>(ProductDto product)
     {
-        throw new NotImplementedException();
+        return this.SendAsync<T>(new ApiRequest()
+        {
+            ApiType = SD.ApiType.POST,
+            Data = product,
+            Url = SD.ProductApiBase + "/api/products"
+        });
     }
 
-    public Task<T> DeleteProductAsync<T>(int id, string token)
+    public async Task<T> DeleteProductAsync<T>(int id, string token)
     {
-        throw new NotImplementedException();
+        return await this.SendAsync<T>(new ApiRequest()
+        {
+            ApiType = SD.ApiType.DELETE,
+            Url = SD.ProductApiBase + "/api/products/" + id,
+            Token = token
+        });
     }
 
     public void Dispose()
@@ -26,13 +36,13 @@ public class ProdactService : BaseServise,IProdactService
         GC.SuppressFinalize(true);
     }
 
-    public async Task<T> GetAllProductsAsync<T>(string token)
+    public async Task<T> GetAllProductsAsync<T>()
     {
        return await SendAsync<T>(new ApiRequest()
         {
             ApiType = SD.ApiType.GET,
             Url = SD.ProductApiBase + "/api/products",
-            Token = token
+            //Token = token
         });
     }
 
@@ -46,8 +56,14 @@ public class ProdactService : BaseServise,IProdactService
         });
     }
 
-    public Task<T> UpdateProductAsync<T>(int id, ProductDto product, string token)
+    public Task<T> UpdateProductAsync<T>(int id, ProductDto product)
     {
-        throw new NotImplementedException();
+        return this.SendAsync<T>(new ApiRequest()
+        {
+            ApiType = SD.ApiType.PUT,
+            Data = product,
+            Url = SD.ProductApiBase + $"/api/products/{id}"
+ 
+        });
     }
 }

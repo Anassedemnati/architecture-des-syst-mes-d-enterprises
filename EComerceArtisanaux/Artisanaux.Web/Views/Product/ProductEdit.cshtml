@@ -1,0 +1,36 @@
+﻿@model Artisanaux.Web.Models.ProductDto
+
+<form asp-action="ProductEdit" method="post" enctype="multipart/form-data">
+    <input asp-for="ProductId" type="hidden" />
+    <div class="container">
+        <h1>Product Edit</h1>
+        <div class="row">
+            <div asp-validation-asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="col-md-6">
+                <label asp-for="ImageURL" class="form-label">ImageURL</label>
+                <input asp-for="ImageURL" class="form-control" />
+                <span asp-validation-for="ImageURL" class="text-danger"></span>
+            </div>
+            <div class="col-md-6">
+                <label asp-for="ProductName" class="form-label">ProductName</label>
+                <input asp-for="ProductName" class="form-control" />
+                <span asp-validation-for="ProductName" class="text-danger"></span>
+            </div>
+            <div class="col-md-6">
+                <label asp-for="Price" class="form-label">Price</label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-6">
+                <label asp-for="CategoryName" class="form-label">CategoryName</label>
+                <input asp-for="CategoryName" class="form-control" />
+                <span asp-validation-for="CategoryName" class="text-danger"></span>
+            </div>
+            <div class="col-md-6">
+                <input type="submit" value="Update" class="btn btn-primary" />
+
+            </div>
+        </div>
+    </div>
+</form>

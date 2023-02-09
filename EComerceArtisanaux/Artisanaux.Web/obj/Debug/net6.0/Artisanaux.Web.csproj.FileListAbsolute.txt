@@ -29,3 +29,5 @@ C:\Users\AnasseDEMNATI\Documents\ACE\EComerceArtisanaux\Artisanaux.Web\obj\Debug
 C:\Users\AnasseDEMNATI\Documents\ACE\EComerceArtisanaux\Artisanaux.Web\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Artisanaux.Web.props
 C:\Users\AnasseDEMNATI\Documents\ACE\EComerceArtisanaux\Artisanaux.Web\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Artisanaux.Web.props
 C:\Users\AnasseDEMNATI\Documents\ACE\EComerceArtisanaux\Artisanaux.Web\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\AnasseDEMNATI\Documents\ACE\EComerceArtisanaux\Artisanaux.Web\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\AnasseDEMNATI\Documents\ACE\EComerceArtisanaux\Artisanaux.Web\obj\Debug\net6.0\Artisanaux.Web.csproj.CopyComplete
